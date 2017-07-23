@@ -6,7 +6,7 @@ body{
 }
 
 header{
-     height: 80px;
+     height: 60px;
      background-color:rgba(0, 0, 0, 0.6);
      width:100%;
      position: fixed;
@@ -14,16 +14,17 @@ header{
      z-index: 10;
  } 
 
-header div{
+header #logo{
     display: inline-block; 
     position: relative;
     /* margin: 20px 0px; */
     height: 100%;
     /* float:left; */
-    line-height:80px;
+    line-height:60px;
+    left: 10%;
 }
 
-header div img{
+header #logo img{
     margin: 0px 20px;
     position: relative;
     top: 10%;
@@ -43,8 +44,8 @@ header #nav li{
     display: block;
     position: relative;
     float:left;
-    line-height: 80px;
-    height: 80px;
+    line-height: 60px;
+    height: 60px;
     text-align: center;
     width: 150px;
     border: none;
@@ -87,17 +88,17 @@ header #nav ul.submenu li a {
 
 #logo-large{
     display: block;
-    margin-top: 10em;
+    margin-top: 15em;
 }
 
 #logo-large img{
     display: block;
-    width: 30%;
+    width: 25%;
     margin:auto;
 }
 
 #logo-large div{
-    margin-top: 4em;
+    margin-top: 8em;
 }
 
 #logo-large p{
@@ -111,12 +112,12 @@ header #nav ul.submenu li a {
 
 #trailer{
     display:block;
-    margin-top: 20em;
+    margin-top: 10em;
 }
 #trailer div{
     display:block;
     margin: auto;
-    width: 1080px;
+    width: 960px;
     border: 1px solid white;
 }
 #trailer div iframe{
@@ -128,11 +129,13 @@ header #nav ul.submenu li a {
     color:white;
     text-align: middle;
     font-family: "微軟正黑體","Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    height: 15px;
+     line-height: 15px; 
     font-size:20px;
 }
 
 #games{
-    margin-top: 15em;
+    margin-top: 10em;
 }
 
 #games>p{
@@ -140,6 +143,7 @@ header #nav ul.submenu li a {
     color:white;
     font-family: "微軟正黑體","Arial","Microsoft YaHei","黑体","宋体",sans-serif;
     font-size:30px;
+    margin-bottom: 2em;
 }
 
 #games table{
@@ -148,18 +152,34 @@ header #nav ul.submenu li a {
 
 
 #games table td div{
-    width: 620px;
-    height: 300px;
     margin: 30px 40px;
+    max-width: 500px;
     position: relative;
     overflow: hidden;
     border: 1px solid black;
+    background-color: white;
 }
-#games img{
+#games .preview{
     float:left;
-    width: 620px;
-    height: 300px;
+    display: block;
+    width: 500px;
     border: none;
+    opacity: 1;
+    transform: scale(1);
+    transition: .3s ease-in-out; 
+}
+#games .preview:hover{
+     opacity: .9; 
+     transition: .3s ease-in-out; 
+     transform: scale(1.2);
+    /* border: none; */
+}
+#games .icon{
+    position: absolute;
+    display: block; 
+    top:10px;
+    right:10px;
+    max-width: 20px;
 }
 
 #games table tr td p{
@@ -181,7 +201,7 @@ header #nav ul.submenu li a {
 }
 
 #contact{
-    margin-top: 15em;
+    margin-top: 10em;
 }
 
 #contact p{
@@ -197,7 +217,7 @@ header #nav ul.submenu li a {
 }
 #contact .sns img{
     width: 10%;
-    margin: 20px 50px;
+    margin: auto 20px;
 }
 
 

@@ -46,7 +46,7 @@
 
         <div id="trailer">
             <div>
-                <iframe width="1080" height="640" 
+                <iframe width="960" height="540" 
                     src="https://www.youtube.com/embed/CZlfbep2LdU?showinfo=0" 
                     frameborder="0" 
                     title="Emergency™2017 Investigator先行预告片"
@@ -57,18 +57,20 @@
         </div>
 
         <div id="games">
-            <p>推荐游戏</p>
+            <p>更多作品</p>
             <table>
                 <tr>
                     <td>
                         <div>
-                        <img src="resources/hyperion/game-emergency2017.png">
+                        <img class="preview" src="resources/hyperion/game-emergency2017.png">
+                        <img class="icon" src="resources/hyperion/icon-pic.png">  
                         <p>Emergency™2017:逆世界</p>
                         </div>
                     </td>
                     <td>
                         <div>
-                        <img src="resources/hyperion/game-vertigo.png">
+                        <img class="preview" src="resources/hyperion/game-vertigo.png">
+                        <img class="icon" src="resources/hyperion/icon-pic.png">  
                         <p>Ver'tigo:无间风云</p>
                         </div>
                     </td>
@@ -76,13 +78,15 @@
                 <tr>
                     <td>
                         <div>
-                        <img src="resources/hyperion/game-emergency2016.png">
+                        <img class="preview" src="resources/hyperion/game-emergency2016.png">
+                        <img class="icon" src="resources/hyperion/icon-pic.png">  
                         <p>Emergency™2016:空中浩劫</p>
                         </div>
                     </td>
                     <td>
                         <div>
-                        <img src="resources/hyperion/game-placeholder.png">
+                        <img class="preview" src="resources/hyperion/game-placeholder.png">
+                        <img class="icon" src="resources/hyperion/icon-pic.png">  
                         <p>敬请期待</p>
                         </div>
                     </td>
@@ -120,15 +124,15 @@
             $("#nav-menu").menu({position: {my: "left bottom", at:"left top"}});
             var config = {
                 viewFactor : 0.35,
-                duration   : 400,
-                distance   : "20px",
+                duration   : 200,
+                distance   : "10px",
                 scale      : 0.8,
             };
             window.sr = new ScrollReveal(config)
             var preview={
                 origin: "top",
                 distance: "24px",
-                duration: 1500,
+                duration: 1000,
                 scale: 1.05
             };
             sr.reveal("#trailer", preview);
