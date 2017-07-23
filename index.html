@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/resources/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/jquery-ui.structure.min.css">
+        
+        <link rel="stylesheet" href="hyperion.css">
+
+        <script src="resources/jquery.min.js"></script>
+        <script src="resources/jquery-ui.js"></script>
+        <script src="resources/scrollreveal.min.js"></script>
+
+
+    </head>
+
+    <body>
+        <header id="header">
+            <div id="logo">
+                <img src="resources/hyperion/HYPERIONPRODUCTIONS.png">
+            </div>
+
+            
+            <div id="nav">
+                <ul id="nav-menu">
+                    <li><a>首页</a></li>
+                    <li><a>游戏</a>
+                        <ul class="submenu">
+                            <li><a>Emergency©2017:逆世界</a></li>
+                            <li><a>Ver'tigo:无间风云</a></li>
+                            <li><a>Emergency©2016:空中浩劫</a></li>
+                        </ul>
+                    <li><a>开发日志</a></li>
+                    <li><a>服务与支持</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div id="logo-large">
+            <img src="resources/hyperion/HYPERIONPRODUCTIONS-large.png">
+            <div>
+                <p>SINCE 2017</p>
+                <p>专注于理性之上的第九艺术</p>
+            </div>
+        </div>
+
+        <div id="trailer">
+            <div>
+                <iframe width="1080" height="640" 
+                    src="https://www.youtube.com/embed/CZlfbep2LdU?showinfo=0" 
+                    frameborder="0" 
+                    title="Emergency™2017 Investigator先行预告片"
+                    allowfullscreen>
+                </iframe> 
+                <p>Emergency™2017 Investigator先行预告片</p>
+            </div>
+        </div>
+
+        <div id="games">
+            <p>推荐游戏</p>
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                        <img src="/resources/hyperion/game-emergency2017.png">
+                        <p>Emergency™2017:逆世界</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                        <img src="/resources/hyperion/game-vertigo.png">
+                        <p>Ver'tigo:无间风云</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                        <img src="/resources/hyperion/game-emergency2016.png">
+                        <p>Emergency™2016:空中浩劫</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                        <img src="/resources/hyperion/game-placeholder.png">
+                        <p>敬请期待</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="contact">
+            <p style="font-weight:bold">联系我们</p>
+            <div class="sns">
+                <img src="/resources/hyperion/contact-weibo.png">
+                <img src="/resources/hyperion/contact-qq.png">
+                <img src="/resources/hyperion/contact-mail.png">
+            </div>
+            <p style="font-weight:bold">加入我们</p>
+            <p><i>如果你对我们的项目有兴趣并有意加入，请将简历发送至<a style="color:yellow">wt1998121 (at) gmail.com</a></i></p>
+            <p><i>感谢你的关注！</i></p>
+            <div class="vacancy">
+                <img src="/resources/hyperion/contact-vacancy.png">
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>语言偏好设置</p>
+            <p>(不存在的)</p>
+            <p>帮助</p>
+
+            <div class="disclaimer">
+                <p>©2006-2013 Hyperion Productions. All Rights Reserved. HyperionProductions.net, and the Hyperion logo are trademarks of Hyperion Productions in the U.S. and/or other countries.<p>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(function() {
+            $("#nav-menu").menu({position: {my: "left bottom", at:"left top"}});
+            var config = {
+                viewFactor : 0.35,
+                duration   : 400,
+                distance   : "20px",
+                scale      : 0.8,
+            };
+            window.sr = new ScrollReveal(config)
+            var preview={
+                origin: "top",
+                distance: "24px",
+                duration: 1500,
+                scale: 1.05
+            };
+            sr.reveal("#trailer", preview);
+            sr.reveal("#games",preview);
+            sr.reveal("#contact",preview);
+            sr.reveal("#footer",preview);
+        });
+    </script>
+</html>
